@@ -5,14 +5,14 @@
 
 #define MAX 10000
 
-// ---------- FUN«√O PARA IMPRIMIR ARRAY ----------
+// FUN√á√ÉO PARA IMPRIMIR ARRAY
 void printArray(int arr[], int n) {
     for(int i = 0; i < n; i++)
         printf("%d ", arr[i]);
     printf("\n");
 }
 
-// ---------- BUBBLE SORT ----------
+//  BUBBLE SORT 
 void bubbleSort(int arr[], int n) {
     for(int i = 0; i < n - 1; i++) {
         for(int j = 0; j < n - i - 1; j++) {
@@ -25,7 +25,7 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
-// ---------- SELECTION SORT ----------
+//  SELECTION SORT
 void selectionSort(int arr[], int n) {
     for(int i = 0; i < n - 1; i++) {
         int min = i;
@@ -39,7 +39,7 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-// ---------- INSERTION SORT ----------
+//  INSERTION SORT 
 void insertionSort(int arr[], int n) {
     for(int i = 1; i < n; i++) {
         int key = arr[i];
@@ -53,7 +53,7 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-// ---------- QUICK SORT ----------
+//  QUICK SORT
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
@@ -82,7 +82,7 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 
-// ---------- MERGE SORT ----------
+// MERGE SORT 
 void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
@@ -119,7 +119,7 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
-// ---------- SHELL SORT ----------
+//  SHELL SORT 
 void shellSort(int arr[], int n) {
     for(int gap = n/2; gap > 0; gap /= 2) {
         for(int i = gap; i < n; i++) {
@@ -132,13 +132,13 @@ void shellSort(int arr[], int n) {
     }
 }
 
-// ---------- GERAR ARRAY ALEAT”RIO ----------
+// GERAR ARRAY ALEAT√ìRIO
 void generateRandomArray(int arr[], int n) {
     for(int i = 0; i < n; i++)
         arr[i] = rand() % 100000;
 }
 
-// ---------- MAIN ----------
+// MAIN
 int main() {
     int n, option;
     int original[MAX], arr[MAX];
@@ -205,3 +205,4 @@ int main() {
 
     return 0;
 }
+
